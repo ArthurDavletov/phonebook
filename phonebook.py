@@ -38,7 +38,7 @@ def clicked():
 
 
 def export_to_file():
-    """Экпорт в файл"""
+    """Экспорт в файл"""
     filename = tk.filedialog.asksaveasfilename(
         filetypes=(
             ("JSON-файл", "*.json"),
