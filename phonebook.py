@@ -9,7 +9,7 @@ import csv
 
 
 def printer():
-    """Обновляет поле контактов"""
+    """Обновляет поле контактов."""
     contacts.sort(key=lambda c: c[sort_by_int.get()])
     scrolled_text.configure(state="normal")
     scrolled_text.delete("1.0", tk.END)
@@ -20,7 +20,7 @@ def printer():
 
 
 def clicked():
-    """Добавление контакта"""
+    """Добавление контакта."""
     name = ent_name.get()
     number = ent_number.get()
     if name != "" and number != "":
@@ -38,7 +38,7 @@ def clicked():
 
 
 def export_to_file():
-    """Экспорт в файл"""
+    """Экспорт в файл."""
     filename = tk.filedialog.asksaveasfilename(
         filetypes=(
             ("JSON-файл", "*.json"),
@@ -58,7 +58,7 @@ def export_to_file():
 
 
 def import_from_file():
-    """Импорт из файла"""
+    """Импорт из файла."""
     global contacts
     filename = tk.filedialog.askopenfilename(
         filetypes=(
